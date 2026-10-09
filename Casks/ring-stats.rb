@@ -7,8 +7,7 @@ cask "ring-stats" do
   version "1.4.0"
   sha256 "815024e9e79485731cd10800cd824808b92c11972244924e419ae006a6e4c081"
 
-  url "https://github.com/PetriLahdelma/ring-stats/releases/download/v#{version}/Ring-Stats-#{version}.dmg",
-      verified: "github.com/PetriLahdelma/ring-stats/"
+  url "https://github.com/PetriLahdelma/ring-stats/releases/download/v#{version}/Ring-Stats-#{version}.dmg"
   name "Ring Stats"
   desc "Oura ring stats in the Mac menu bar"
   homepage "https://github.com/PetriLahdelma/ring-stats"
@@ -18,7 +17,7 @@ cask "ring-stats" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Ring Stats.app"
 
